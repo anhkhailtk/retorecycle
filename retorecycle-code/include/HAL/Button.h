@@ -10,7 +10,12 @@ public:
 
 private:
     int _pin;
-    unsigned long _lastPressTime;
-    uint8_t _state;
+    unsigned long _lastPressTime; 
+    unsigned long _lastDebounceTime;
+    bool _lastReading;
+    bool _isPressed;
+    bool _clickFlag;
+    int _longPressIncrement;
+    unsigned long _lastIncrementTime;
     // ... các biến khác để xử lý debounce và long press
 };
