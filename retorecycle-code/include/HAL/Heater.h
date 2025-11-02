@@ -14,5 +14,6 @@ public:
     void setPower(int power);
 
 private:
-    int _pin;
+    int _heaterPin; // Chân pin điều khiển Heater
+    int _currentPower; // Lưu trữ công suất hiện tại
 };
